@@ -13,21 +13,22 @@ var foods = {
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.keys(foods))
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(foods))
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
-// YOUR CODE HERE
+console.log(foods.grapes)
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
-// YOUR CODE HERE
+foods.bananas = 75; 
 
-
+console.log(Object.keys(foods));
+console.log(Object.values(foods))
 // -------------------
 // Part 2: Email
 // -------------------
@@ -41,14 +42,21 @@ var foods = {
 
 // Write code that logs your email object to the terminal.
 
+var email = {
+  sender: "pekar.kimberly@gmail.com", 
+  recipient: "gregory.t.ewing@gmail.com",
+  subject: "Hello from New Zealand",
+  date: "Friday, March 8th at 6:34am",
+  }
+console.log(email)
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.keys(email))
 
 // Write code that logs all of the 'values' of the email object 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(email))
 
 
 // -------------------
@@ -99,3 +107,37 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+emails = ["Hello from New Zealand", "Christmas Party", "Coffee?", "World Cup Tickets"];
+
+emails = [
+  {
+    sender: "pekar.kimberly@gmail.com", 
+    recipient: "gregory.t.ewing@gmail.com",
+    subject: "Hello from New Zealand",
+    date: "Friday, March 8th at 6:34am",
+  },
+  {
+    sender: "pekar.kimberly@gmail.com", 
+    recipient: "gregory.t.ewing@gmail.com",
+    subject: "Christmas Party",
+    date: "Friday, November 30th at 7:48pm",
+  },
+  {
+    sender: "pekar.kimberly@gmail.com", 
+    recipient: "gregory.t.ewing@gmail.com",
+    subject: "Coffee",
+    date: "Thursday, February 29th 4:00pm",
+    },
+  {
+    sender: "pekar.kimberly@gmail.com", 
+    recipient: "gregory.t.ewing@gmail.com",
+    subject: "World Cup Tickets",
+    date: "Friday, March 8th at 6:53am",
+  },
+]
+console.log(emails)
+
+
+
+
